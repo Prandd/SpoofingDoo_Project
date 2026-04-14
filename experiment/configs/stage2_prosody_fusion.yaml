@@ -1,0 +1,3 @@
+# Stage 2: late-fusion prosody branch (jitter/shimmer/F0 stats)
+stage: 2
+description: "AASIST-L MGO + prosody MLP concatenation before classifier"

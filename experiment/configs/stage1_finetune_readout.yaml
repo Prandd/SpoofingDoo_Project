@@ -1,0 +1,3 @@
+# Stage 1: freeze backbone, fine-tune readout only
+stage: 1
+description: "Frozen SincNet + graph; train final classifier on CSS"

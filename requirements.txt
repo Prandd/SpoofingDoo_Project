@@ -1,0 +1,36 @@
+# ─────────────────────────────────────────────
+# SpoofingDoo – Pilot Phase (100 samples)
+# Minimal dependencies for local debugging
+# ─────────────────────────────────────────────
+
+# ── Core ML ──────────────────────────────────
+# Install PyTorch separately via pytorch.org to match your hardware (CPU / CUDA / MPS).
+# Example (CPU-only):   pip install torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+# Example (CUDA 12.1):  pip install torch torchaudio --index-url https://download.pytorch.org/whl/cu121
+# Example (Apple MPS):  pip install torch torchaudio   (default index, already MPS-enabled)
+torch>=2.0
+torchaudio>=2.0
+
+# ── Audio / Prosody ──────────────────────────
+praat-parselmouth>=0.4.3     # Praat wrapper: jitter, shimmer, F0 extraction
+librosa>=0.10.0              # Audio loading, resampling, STFT utilities
+soundfile>=0.12.1            # Fast WAV I/O (backend used by librosa & torchaudio)
+
+# ── Experiment Utilities ─────────────────────
+scikit-learn>=1.3            # 5-fold speaker-disjoint StratifiedKFold
+numpy>=1.24
+scipy>=1.11                  # Signal utilities; pulled in by librosa already
+
+# ── Visualisation (lightweight) ───────────────
+matplotlib>=3.7              # ROC / DET curves, attention maps
+
+# ── Config & Dev ─────────────────────────────
+pyyaml>=6.0                  # Load experiment/configs/*.yaml
+pytest>=7.0                  # Unit / smoke tests
+
+# ─────────────────────────────────────────────
+# NOT included (add only when needed):
+#   torch-audiomentations  – augmentation (Stage 1); heavy optional dependency
+#   jupyter / ipykernel    – notebooks (use `pip install jupyter` locally if needed)
+#   tensorboard            – overkill for 100 samples; use print logs instead
+# ─────────────────────────────────────────────

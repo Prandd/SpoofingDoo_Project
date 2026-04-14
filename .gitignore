@@ -38,7 +38,33 @@ Thumbs.db
 # Logs / local artifacts
 *.log
 
-# extract_audio: track only CSS/ (ignore F0_*, genuine, Train, etc.)
+# ML / experiment artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+*.npz
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+*.joblib
+
+# TensorBoard / W&B / Lightning-style outputs (always local)
+**/events.out.tfevents.*
+wandb/
+lightning_logs/
+
+# Datasets & caches (keep directory placeholders only)
+data/**/*
+!data/**/.gitkeep
+
+# Experiment outputs (keep empty tree in git)
+experiment/runs/**
+!experiment/runs/.gitkeep
+
+# Legacy extract_audio: track only CSS/ (ignore F0_*, genuine, Train, etc.)
 extract_audio/*
 !extract_audio/CSS/
 !extract_audio/CSS/**

@@ -23,11 +23,11 @@ pip install torch numpy matplotlib seaborn librosa soundfile
 
 | Package | Role |
 |--------|------|
-| **torch** | Deep model (`AASIST_imported`, attention scripts) |
+| **torch** | Deep model (`src/models`, `experiment/scripts/*_attention.py`) |
 | **numpy** | Arrays and numerics everywhere |
 | **matplotlib** | Plotting (`pyplot`) |
 | **seaborn** | Heatmaps / styled plots in attention scripts |
-| **librosa** | Audio load, features, displays (`feature_analyzer`, `pitch_extraction`) |
+| **librosa** | Audio load, features, displays (`src/features/feature_analyzer`, `src/features/pitch_extraction`) |
 | **soundfile** | Reading/writing WAV in attention scripts |
 
 ## Notes

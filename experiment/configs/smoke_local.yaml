@@ -1,0 +1,3 @@
+# Short local run — write under experiment/runs/_smoke/
+stage: smoke
+description: "Fast sanity run for CI or laptop checks"

@@ -1,0 +1,3 @@
+# Stage 3: cross-style evaluation (e.g. train formal, test excited spoof)
+stage: 3
+description: "Prosodic masking analysis per CSS styles"
