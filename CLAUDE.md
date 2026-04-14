@@ -122,8 +122,8 @@ from eval import ...                       # Evaluation metrics
 
 ## 📌 CURRENT PROGRESS (Update this manually when starting a new session)
 - [x] Structure defined.
-- [ ] Task 1: Offline Prosody Extraction.
-- [ ] Task 2: PyTorch Dataset & 5-fold CV splits.
+- [x] Task 1: Offline Prosody Extraction.
+- [x] Task 2: PyTorch Dataset & 5-fold CV splits.
 - [ ] Task 3: AASIST-L Late Fusion MLP Modification.
 - [ ] Task 4: Training Loop & Augmentation.
 

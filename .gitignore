@@ -45,6 +45,7 @@ Thumbs.db
 *.onnx
 *.tflite
 *.npz
+*.npy
 *.h5
 *.hdf5
 *.pkl
