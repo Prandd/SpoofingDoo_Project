@@ -531,6 +531,10 @@ class Model(nn.Module):
 
         self.out_layer = nn.Linear(5 * gat_dims[1], 2)
 
+        # ---- Prosody fusion (optional, added by AASISTWithProsody wrapper) ----
+        # NOTE: Do NOT add a prosody MLP directly here.  Use AASISTWithProsody
+        # below, which freezes this backbone and appends a trainable branch.
+
     def forward(self, x, Freq_aug=False):
 
         x = x.unsqueeze(1)
@@ -611,3 +615,79 @@ class Model(nn.Module):
         output = self.out_layer(last_hidden)
 
         return last_hidden, output
+
+
+# ---------------------------------------------------------------------------
+# Stage-2 wrapper: frozen AASIST-L backbone + trainable prosody MLP + readout
+# ---------------------------------------------------------------------------
+
+class AASISTWithProsody(nn.Module):
+    """AASIST-L backbone (frozen) with a late-fusion prosody MLP branch.
+
+    **BASELINE MODEL** — Stage 2 of the SpoofingDoo CSS pilot experiment.
+    This is the reference architecture against which future ablations and
+    cross-style experiments (Stage 3) are compared.
+
+    Architecture
+    ------------
+    frozen backbone  →  last_hidden  (bs, mgo_dim)  ─┐
+                                                       cat → Linear(mgo_dim+16, 1) → logit
+    prosody vector  →  Linear(3,16) → ReLU → Dropout(0.5)  ─┘
+
+    Only ``prosody_mlp`` and ``out_layer`` have ``requires_grad=True``.
+
+    Parameters
+    ----------
+    backbone : Model
+        A pre-loaded (or randomly initialised) AASIST-L ``Model`` instance.
+    prosody_dim : int
+        Dimensionality of the prosody feature vector (default 3:
+        jitter_mean, shimmer_mean, f0_std).
+    """
+
+    def __init__(self, backbone: Model, prosody_dim: int = 3) -> None:
+        super().__init__()
+
+        # Store backbone and freeze ALL its parameters
+        self.backbone = backbone
+        for param in self.backbone.parameters():
+            param.requires_grad = False
+
+        # Infer MGO output dimension from the backbone's existing readout layer
+        mgo_dim: int = backbone.out_layer.in_features  # typically 160 for AASIST-L
+
+        # Prosody MLP — CRITICAL: Dropout(0.5) forces model to not rely solely
+        # on jitter/shimmer numbers; SincNet side always contributes.
+        self.prosody_mlp = nn.Sequential(
+            nn.Linear(prosody_dim, 16),
+            nn.ReLU(),
+            nn.Dropout(p=0.5),
+        )
+
+        # New binary readout (BCEWithLogitsLoss expects a single logit per sample)
+        self.out_layer = nn.Linear(mgo_dim + 16, 1)
+
+    # ------------------------------------------------------------------
+    def forward(self, x: Tensor, prosody: Tensor, Freq_aug: bool = False) -> Tensor:
+        """Return a scalar logit per sample (shape ``(bs,)``).
+
+        Parameters
+        ----------
+        x : Tensor, shape (bs, 64600)
+            Raw waveform input for the backbone.
+        prosody : Tensor, shape (bs, 3)
+            Utterance-level prosody vector [jitter_mean, shimmer_mean, f0_std].
+        Freq_aug : bool
+            Pass ``True`` during training to enable SincNet frequency masking.
+        """
+        # Frozen backbone — no gradients flow back here
+        with torch.no_grad():
+            last_hidden, _ = self.backbone(x, Freq_aug=Freq_aug)  # (bs, mgo_dim)
+
+        # Trainable prosody branch
+        prosody_feat = self.prosody_mlp(prosody)  # (bs, 16)
+
+        # Fuse and classify
+        fused = torch.cat([last_hidden, prosody_feat], dim=1)  # (bs, mgo_dim+16)
+        logit = self.out_layer(fused)                          # (bs, 1)
+        return logit.squeeze(1)                                # (bs,)

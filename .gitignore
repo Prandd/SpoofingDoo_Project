@@ -57,13 +57,16 @@ Thumbs.db
 wandb/
 lightning_logs/
 
-# Datasets & caches (keep directory placeholders only)
-data/**/*
+# Datasets & caches (keep directory placeholders only).
+# Un-ignore trailing dirs so nested `.gitkeep` files can be tracked (git skips ignored parents otherwise).
+data/**
+!data/**/
 !data/**/.gitkeep
 
-# Experiment outputs (keep empty tree in git)
+# Experiment outputs (only `.gitkeep` placeholders are tracked; checkpoints/logs stay local).
 experiment/runs/**
-!experiment/runs/.gitkeep
+!experiment/runs/**/
+!experiment/runs/**/.gitkeep
 
 # Legacy extract_audio: track only CSS/ (ignore F0_*, genuine, Train, etc.)
 extract_audio/*
