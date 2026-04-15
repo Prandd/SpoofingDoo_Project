@@ -46,9 +46,12 @@ from eval import compute_eer, compute_auc
 
 
 # ── Default AASIST-L architecture args (lightweight ~85k-param variant) ────────
+# Derived from the actual AASIST-L.pth checkpoint tensor shapes:
+#   encoder filts[3]=[32,24], filts[4]=[24,24], gat_dims=[24,32]
+#   out_layer: [2, 160] = 5 * 32 → mgo_dim=160
 AASIST_L_ARGS: dict = {
-    "filts": [70, [1, 32], [32, 32], [32, 64], [64, 64]],
-    "gat_dims": [64, 32],
+    "filts": [70, [1, 32], [32, 32], [32, 24], [24, 24]],
+    "gat_dims": [24, 32],
     "pool_ratios": [0.5, 0.7, 0.5, 0.5],
     "temperatures": [2.0, 2.0, 100.0, 100.0],
     "first_conv": 128,
@@ -268,11 +271,14 @@ def plot_training_curves(history: List[dict], fig_dir: Path) -> None:
 
 
 def plot_score_distribution(eval_result: dict, fig_dir: Path) -> None:
-    """2. score_distribution.png — KDE of spoof-score by class."""
+    """2. score_distribution.png — KDE of spoof-score by class.
+
+    Uses scipy.stats.gaussian_kde directly to avoid seaborn/pandas version
+    incompatibilities with mode.use_inf_as_null that affect older seaborn.
+    """
     _setup_matplotlib()
     import matplotlib.pyplot as plt
-    import seaborn as sns
-    sns.set_theme(style="whitegrid", palette="muted")
+    import matplotlib.patches as mpatches
 
     scores  = eval_result["scores"]
     labels  = eval_result["labels"]
@@ -281,19 +287,24 @@ def plot_score_distribution(eval_result: dict, fig_dir: Path) -> None:
     spoof_scores   = scores[labels == 1]
 
     fig, ax = plt.subplots(figsize=(8, 5))
-    if len(genuine_scores) > 1:
-        sns.kdeplot(genuine_scores, ax=ax, fill=True, alpha=0.45,
-                    color="#4c72b0", label=f"Genuine (n={len(genuine_scores)})")
-    else:
-        ax.hist(genuine_scores, bins=5, alpha=0.45, color="#4c72b0",
-                label=f"Genuine (n={len(genuine_scores)})", density=True)
+    ax.set_facecolor("#f9f9f9")
+    ax.grid(True, linestyle="--", alpha=0.5)
 
-    if len(spoof_scores) > 1:
-        sns.kdeplot(spoof_scores, ax=ax, fill=True, alpha=0.45,
-                    color="#c44e52", label=f"Spoofed (n={len(spoof_scores)})")
-    else:
-        ax.hist(spoof_scores, bins=5, alpha=0.45, color="#c44e52",
-                label=f"Spoofed (n={len(spoof_scores)})", density=True)
+    x_range = np.linspace(0, 1, 300)
+
+    def _plot_class(data, color, label):
+        if len(data) > 1:
+            from scipy.stats import gaussian_kde
+            kde = gaussian_kde(data, bw_method="scott")
+            density = kde(x_range)
+            ax.plot(x_range, density, color=color, lw=2)
+            ax.fill_between(x_range, density, alpha=0.40, color=color, label=label)
+        else:
+            ax.axvline(data[0] if len(data) == 1 else 0.5, color=color,
+                       linestyle="--", lw=2, label=label)
+
+    _plot_class(genuine_scores, "#4c72b0", f"Genuine (n={len(genuine_scores)})")
+    _plot_class(spoof_scores,   "#c44e52", f"Spoofed (n={len(spoof_scores)})")
 
     # EER threshold marker
     eer, thr = compute_eer(labels, scores)
