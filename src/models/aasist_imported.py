@@ -632,7 +632,10 @@ class AASISTWithProsody(nn.Module):
     ------------
     frozen backbone  →  last_hidden  (bs, mgo_dim)  ─┐
                                                        cat → Linear(mgo_dim+16, 1) → logit
-    prosody vector  →  Linear(3,16) → ReLU → Dropout(0.5)  ─┘
+    prosody vector  →  BN1d(3) → Linear(3,16) → ReLU → Dropout(0.5)  ─┘
+
+    BN1d normalises the wildly different prosody scales
+    (jitter ~0.02, F0 ~40.0) to zero-mean/unit-variance automatically.
 
     Only ``prosody_mlp`` and ``out_layer`` have ``requires_grad=True``.
 
@@ -656,9 +659,11 @@ class AASISTWithProsody(nn.Module):
         # Infer MGO output dimension from the backbone's existing readout layer
         mgo_dim: int = backbone.out_layer.in_features  # typically 160 for AASIST-L
 
-        # Prosody MLP — CRITICAL: Dropout(0.5) forces model to not rely solely
-        # on jitter/shimmer numbers; SincNet side always contributes.
+        # Prosody MLP — BatchNorm1d acts as automatic Z-score normalisation for
+        # features on wildly different scales (jitter ~0.02, F0 ~40.0).
+        # Dropout(0.5) prevents over-reliance on prosody alone.
         self.prosody_mlp = nn.Sequential(
+            nn.BatchNorm1d(prosody_dim),
             nn.Linear(prosody_dim, 16),
             nn.ReLU(),
             nn.Dropout(p=0.5),

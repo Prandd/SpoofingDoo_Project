@@ -102,7 +102,7 @@ The project uses setuptools with src layout. After `pip install -e .`, import as
 from models import Model                    # AASIST-L wrapper
 from features.pitch_extraction import ...  # Prosody extraction
 from datasets import ...                   # PyTorch datasets
-from train import ...                      # Training utilities
+from train import ...                      # Training loops
 from eval import ...                       # Evaluation metrics
 ```
 
@@ -124,8 +124,9 @@ from eval import ...                       # Evaluation metrics
 - [x] Structure defined.
 - [x] Task 1: Offline Prosody Extraction.
 - [x] Task 2: PyTorch Dataset & 5-fold CV splits.
-- [x] Task 3: AASIST-L Late Fusion MLP Modification. (`AASISTWithProsody` in src/models/aasist_imported.py) **← BASELINE MODEL**
-- [x] Task 4: Training Loop & Augmentation. (`experiment/scripts/baseline_train.py`; 4 figures → experiment/runs/figures/) **← BASELINE SCRIPT**
+- [x] Task 3: AASIST-L Late Fusion MLP Modification. (`AASISTWithProsody` in src/models/aasist_imported.py)
+- [x] Task 4: Training Loop & Augmentation. (`experiment/scripts/train.py` with visualization generation)
+- [x] Task 5: Hyperparameter Tuning (Pilot). Implemented `BatchNorm1d` for Prosody, adjusted `pos_weight=1.0`, and achieved successful AUC > 0.8 in specific folds.
 
 ---
 

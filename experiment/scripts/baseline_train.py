@@ -18,8 +18,8 @@ CRITICAL design points
 ----------------------
 - SincNet and all graph layers are COMPLETELY FROZEN (requires_grad=False).
 - ONLY AASISTWithProsody.prosody_mlp and .out_layer are trainable.
-- BCEWithLogitsLoss with pos_weight = n_genuine / n_spoof counters the 5:1
-  class imbalance and prevents the model from always predicting spoof.
+- BCEWithLogitsLoss with pos_weight = 1.0 (fixed). Dynamic computation gave
+  ~0.2 which suppressed spoof learning entirely at the 100-sample scale.
 - Gaussian noise augmentation is applied at the dataset level (augment=True).
 """
 from __future__ import annotations
@@ -85,16 +85,18 @@ def build_model(checkpoint: Path | None, device: torch.device) -> AASISTWithPros
 
 
 def compute_pos_weight(fold: dict, device: torch.device) -> torch.Tensor:
-    """pos_weight = n_genuine / n_spoof — balances BCE loss for minority class."""
+    """Force pos_weight=1.0 to prevent the 0.2 weight from suppressing spoof learning.
+
+    With ~75 spoof : 15 genuine (5:1 ratio), dynamic pos_weight would be 0.2,
+    which causes the model to always predict low spoof probability → EER ≈ 50%.
+    Fixing to 1.0 forces the model to learn both classes equally.
+    """
     labels = list(fold["train_labels"].values())
     n_spoof   = sum(1 for l in labels if l == 1)
     n_genuine = sum(1 for l in labels if l == 0)
-    if n_spoof == 0:
-        return torch.tensor([1.0], device=device)
-    pw = n_genuine / n_spoof
     print(f"[Imbalance] train genuine={n_genuine}, spoof={n_spoof} "
-          f"→ pos_weight={pw:.4f}")
-    return torch.tensor([pw], dtype=torch.float32, device=device)
+          f"→ pos_weight=1.0 (fixed; dynamic would be {n_genuine/max(n_spoof,1):.4f})")
+    return torch.tensor([1.0], device=device)
 
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -673,10 +675,10 @@ def parse_args() -> argparse.Namespace:
                    help="Directory for checkpoints and history.json.")
     p.add_argument("--fig_dir",  default="experiment/runs/figures",
                    help="Directory where the 4 PNG figures are saved.")
-    p.add_argument("--epochs",      type=int,   default=50)
-    p.add_argument("--lr",          type=float, default=1e-3)
+    p.add_argument("--epochs",      type=int,   default=100)
+    p.add_argument("--lr",          type=float, default=1e-4)
     p.add_argument("--batch_size",  type=int,   default=16)
-    p.add_argument("--patience",    type=int,   default=5,
+    p.add_argument("--patience",    type=int,   default=10,
                    help="Early stopping patience in epochs.")
     p.add_argument("--aug_snr_db",  type=float, default=15.0,
                    help="SNR (dB) for Gaussian noise augmentation on train set.")
