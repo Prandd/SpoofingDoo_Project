@@ -1,0 +1,650 @@
+{
+  "Casual_spk3_utt1": {
+    "path": "data/raw/wav/CSS/Bona fide/Casual/Casual_spk3_utt1.wav",
+    "jitter_mean": 0.027481679740143754,
+    "shimmer_mean": 0.0891974659629153,
+    "f0_std": 23.389311078077235
+  },
+  "Casual_spk3_utt2": {
+    "path": "data/raw/wav/CSS/Bona fide/Casual/Casual_spk3_utt2.wav",
+    "jitter_mean": 0.023669785038975096,
+    "shimmer_mean": 0.06426897836540513,
+    "f0_std": 29.29187721669514
+  },
+  "Casual_spk3_utt3": {
+    "path": "data/raw/wav/CSS/Bona fide/Casual/Casual_spk3_utt3.wav",
+    "jitter_mean": 0.024949735381171304,
+    "shimmer_mean": 0.07382552885491249,
+    "f0_std": 26.98758697988129
+  },
+  "Casual_spk4_utt1": {
+    "path": "data/raw/wav/CSS/Bona fide/Casual/Casual_spk4_utt1.wav",
+    "jitter_mean": 0.017717246949337365,
+    "shimmer_mean": 0.05343152257124343,
+    "f0_std": 23.398585211265523
+  },
+  "Casual_spk4_utt2": {
+    "path": "data/raw/wav/CSS/Bona fide/Casual/Casual_spk4_utt2.wav",
+    "jitter_mean": 0.011470598633205981,
+    "shimmer_mean": 0.05423310701112826,
+    "f0_std": 32.0751996968163
+  },
+  "Casual_spk4_utt3": {
+    "path": "data/raw/wav/CSS/Bona fide/Casual/Casual_spk4_utt3.wav",
+    "jitter_mean": 0.015808591202983748,
+    "shimmer_mean": 0.04687481548630553,
+    "f0_std": 26.94003682799432
+  },
+  "Excited_spk5_utt1": {
+    "path": "data/raw/wav/CSS/Bona fide/Excited/Excited_spk5_utt1.wav",
+    "jitter_mean": 0.024176651576601288,
+    "shimmer_mean": 0.11613976592790072,
+    "f0_std": 48.10956208853258
+  },
+  "Excited_spk5_utt2": {
+    "path": "data/raw/wav/CSS/Bona fide/Excited/Excited_spk5_utt2.wav",
+    "jitter_mean": 0.022049718249421226,
+    "shimmer_mean": 0.10164267922696552,
+    "f0_std": 49.24591893165546
+  },
+  "Excited_spk5_utt3": {
+    "path": "data/raw/wav/CSS/Bona fide/Excited/Excited_spk5_utt3.wav",
+    "jitter_mean": 0.023374975172290022,
+    "shimmer_mean": 0.09970330978541331,
+    "f0_std": 57.808121345536925
+  },
+  "Excited_spk6_utt1": {
+    "path": "data/raw/wav/CSS/Bona fide/Excited/Excited_spk6_utt1.wav",
+    "jitter_mean": 0.017241266567090244,
+    "shimmer_mean": 0.10253328866802443,
+    "f0_std": 45.086518310269035
+  },
+  "Excited_spk6_utt2": {
+    "path": "data/raw/wav/CSS/Bona fide/Excited/Excited_spk6_utt2.wav",
+    "jitter_mean": 0.01635002527822272,
+    "shimmer_mean": 0.09336328327774765,
+    "f0_std": 62.30242960717845
+  },
+  "Excited_spk6_utt3": {
+    "path": "data/raw/wav/CSS/Bona fide/Excited/Excited_spk6_utt3.wav",
+    "jitter_mean": 0.019584404632118094,
+    "shimmer_mean": 0.09590442589523089,
+    "f0_std": 69.3870095526955
+  },
+  "Formal_spk1_utt1": {
+    "path": "data/raw/wav/CSS/Bona fide/Formal/Formal_spk1_utt1.wav",
+    "jitter_mean": 0.027120388755874518,
+    "shimmer_mean": 0.1277041087467691,
+    "f0_std": 25.64005357520321
+  },
+  "Formal_spk1_utt2": {
+    "path": "data/raw/wav/CSS/Bona fide/Formal/Formal_spk1_utt2.wav",
+    "jitter_mean": 0.02719855081733753,
+    "shimmer_mean": 0.09690275843694289,
+    "f0_std": 21.713710013817284
+  },
+  "Formal_spk1_utt3": {
+    "path": "data/raw/wav/CSS/Bona fide/Formal/Formal_spk1_utt3.wav",
+    "jitter_mean": 0.026440395556212536,
+    "shimmer_mean": 0.1141666743393181,
+    "f0_std": 30.094803651620932
+  },
+  "Formal_spk2_utt1": {
+    "path": "data/raw/wav/CSS/Bona fide/Formal/Formal_spk2_utt1.wav",
+    "jitter_mean": 0.016607651722449383,
+    "shimmer_mean": 0.07833376344313084,
+    "f0_std": 24.873197918066126
+  },
+  "Formal_spk2_utt2": {
+    "path": "data/raw/wav/CSS/Bona fide/Formal/Formal_spk2_utt2.wav",
+    "jitter_mean": 0.012494332035163962,
+    "shimmer_mean": 0.06463452816749257,
+    "f0_std": 34.743000161865034
+  },
+  "Formal_spk2_utt3": {
+    "path": "data/raw/wav/CSS/Bona fide/Formal/Formal_spk2_utt3.wav",
+    "jitter_mean": 0.017174505250655968,
+    "shimmer_mean": 0.0696154063094069,
+    "f0_std": 41.47766558161218
+  },
+  "FastPitch_HifiGAN_Casual_spk3_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/FastPitch_HifiGAN_Casual_spk3_utt1.wav",
+    "jitter_mean": 0.02668343670658152,
+    "shimmer_mean": 0.08618633194405695,
+    "f0_std": 22.286327611839287
+  },
+  "FastPitch_HifiGAN_Casual_spk3_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/FastPitch_HifiGAN_Casual_spk3_utt2.wav",
+    "jitter_mean": 0.021614422665807285,
+    "shimmer_mean": 0.07532698325888736,
+    "f0_std": 28.666255413615634
+  },
+  "FastPitch_HifiGAN_Casual_spk3_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/FastPitch_HifiGAN_Casual_spk3_utt3.wav",
+    "jitter_mean": 0.024502685364551323,
+    "shimmer_mean": 0.07091664968866813,
+    "f0_std": 25.794261834498705
+  },
+  "FastPitch_HifiGAN_Casual_spk4_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/FastPitch_HifiGAN_Casual_spk4_utt1.wav",
+    "jitter_mean": 0.015660535950570872,
+    "shimmer_mean": 0.06022107676940808,
+    "f0_std": 21.178401836988407
+  },
+  "FastPitch_HifiGAN_Casual_spk4_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/FastPitch_HifiGAN_Casual_spk4_utt2.wav",
+    "jitter_mean": 0.015132825157423565,
+    "shimmer_mean": 0.06608138190796031,
+    "f0_std": 25.334280243131047
+  },
+  "FastPitch_HifiGAN_Casual_spk4_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/FastPitch_HifiGAN_Casual_spk4_utt3.wav",
+    "jitter_mean": 0.015323461845777927,
+    "shimmer_mean": 0.06598636426260623,
+    "f0_std": 23.22944304555397
+  },
+  "FastPitch_UnivNet_Casual_spk3_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/FastPitch_UnivNet_Casual_spk3_utt1.wav",
+    "jitter_mean": 0.028207258479972065,
+    "shimmer_mean": 0.08197103126315256,
+    "f0_std": 18.785568116868102
+  },
+  "FastPitch_UnivNet_Casual_spk3_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/FastPitch_UnivNet_Casual_spk3_utt2.wav",
+    "jitter_mean": 0.02645925353658662,
+    "shimmer_mean": 0.0694670706055798,
+    "f0_std": 24.687690900932814
+  },
+  "FastPitch_UnivNet_Casual_spk3_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/FastPitch_UnivNet_Casual_spk3_utt3.wav",
+    "jitter_mean": 0.025614171200559407,
+    "shimmer_mean": 0.08551564179471223,
+    "f0_std": 22.51685212269698
+  },
+  "FastPitch_UnivNet_Casual_spk4_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/FastPitch_UnivNet_Casual_spk4_utt1.wav",
+    "jitter_mean": 0.01897975051173359,
+    "shimmer_mean": 0.06938769980467581,
+    "f0_std": 19.23348581399528
+  },
+  "FastPitch_UnivNet_Casual_spk4_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/FastPitch_UnivNet_Casual_spk4_utt2.wav",
+    "jitter_mean": 0.018404858710544453,
+    "shimmer_mean": 0.0706311052575495,
+    "f0_std": 23.17829678421121
+  },
+  "FastPitch_UnivNet_Casual_spk4_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/FastPitch_UnivNet_Casual_spk4_utt3.wav",
+    "jitter_mean": 0.016982135999840255,
+    "shimmer_mean": 0.057883193302089346,
+    "f0_std": 20.83922761600487
+  },
+  "Tacotron2_HifiGAN_Casual_spk3_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/Tacotron2_HifiGAN_Casual_spk3_utt1.wav",
+    "jitter_mean": 0.02669517666864086,
+    "shimmer_mean": 0.08127630813444532,
+    "f0_std": 18.174853579970502
+  },
+  "Tacotron2_HifiGAN_Casual_spk3_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/Tacotron2_HifiGAN_Casual_spk3_utt2.wav",
+    "jitter_mean": 0.018868015670495546,
+    "shimmer_mean": 0.0726992774093769,
+    "f0_std": 24.901250656374597
+  },
+  "Tacotron2_HifiGAN_Casual_spk3_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/Tacotron2_HifiGAN_Casual_spk3_utt3.wav",
+    "jitter_mean": 0.0255150951766855,
+    "shimmer_mean": 0.08251260472141432,
+    "f0_std": 22.972211414451746
+  },
+  "Tacotron2_HifiGAN_Casual_spk4_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/Tacotron2_HifiGAN_Casual_spk4_utt1.wav",
+    "jitter_mean": 0.01778654511450367,
+    "shimmer_mean": 0.05484870766726721,
+    "f0_std": 19.70232393360983
+  },
+  "Tacotron2_HifiGAN_Casual_spk4_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/Tacotron2_HifiGAN_Casual_spk4_utt2.wav",
+    "jitter_mean": 0.016379537343479106,
+    "shimmer_mean": 0.059198822699368304,
+    "f0_std": 28.857837848484287
+  },
+  "Tacotron2_HifiGAN_Casual_spk4_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/Tacotron2_HifiGAN_Casual_spk4_utt3.wav",
+    "jitter_mean": 0.014339606880948935,
+    "shimmer_mean": 0.050866590346469315,
+    "f0_std": 23.99395384068781
+  },
+  "Tacotron2_UnivNet_Casual_spk3_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/Tacotron2_UnivNet_Casual_spk3_utt1.wav",
+    "jitter_mean": 0.023144525419520626,
+    "shimmer_mean": 0.07714675954638006,
+    "f0_std": 18.612105528447138
+  },
+  "Tacotron2_UnivNet_Casual_spk3_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/Tacotron2_UnivNet_Casual_spk3_utt2.wav",
+    "jitter_mean": 0.020615891600746547,
+    "shimmer_mean": 0.08056449332814897,
+    "f0_std": 24.83767693808547
+  },
+  "Tacotron2_UnivNet_Casual_spk3_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/Tacotron2_UnivNet_Casual_spk3_utt3.wav",
+    "jitter_mean": 0.02519832546142974,
+    "shimmer_mean": 0.0777298248538178,
+    "f0_std": 22.699672003289113
+  },
+  "Tacotron2_UnivNet_Casual_spk4_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/Tacotron2_UnivNet_Casual_spk4_utt1.wav",
+    "jitter_mean": 0.016123274545004687,
+    "shimmer_mean": 0.051970448412548005,
+    "f0_std": 19.213401209971725
+  },
+  "Tacotron2_UnivNet_Casual_spk4_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/Tacotron2_UnivNet_Casual_spk4_utt2.wav",
+    "jitter_mean": 0.010892657636591302,
+    "shimmer_mean": 0.05960440688754975,
+    "f0_std": 27.511030117160683
+  },
+  "Tacotron2_UnivNet_Casual_spk4_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/Tacotron2_UnivNet_Casual_spk4_utt3.wav",
+    "jitter_mean": 0.013086772188246198,
+    "shimmer_mean": 0.04870321410589646,
+    "f0_std": 22.851160708404972
+  },
+  "VITS_Casual_spk3_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/VITS_Casual_spk3_utt1.wav",
+    "jitter_mean": 0.025541321199989794,
+    "shimmer_mean": 0.08009974695977584,
+    "f0_std": 16.963815260689213
+  },
+  "VITS_Casual_spk3_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/VITS_Casual_spk3_utt2.wav",
+    "jitter_mean": 0.023889139031427562,
+    "shimmer_mean": 0.07455979594059761,
+    "f0_std": 26.281513099574813
+  },
+  "VITS_Casual_spk3_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/VITS_Casual_spk3_utt3.wav",
+    "jitter_mean": 0.028293287786287803,
+    "shimmer_mean": 0.07527467559715094,
+    "f0_std": 26.227665689118606
+  },
+  "VITS_Casual_spk4_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/VITS_Casual_spk4_utt1.wav",
+    "jitter_mean": 0.017730112087052583,
+    "shimmer_mean": 0.06664492028703994,
+    "f0_std": 19.30548101945028
+  },
+  "VITS_Casual_spk4_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/VITS_Casual_spk4_utt2.wav",
+    "jitter_mean": 0.011919794387239406,
+    "shimmer_mean": 0.056107375651417137,
+    "f0_std": 22.640867134361187
+  },
+  "VITS_Casual_spk4_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Casual/VITS_Casual_spk4_utt3.wav",
+    "jitter_mean": 0.01319364944863415,
+    "shimmer_mean": 0.05807423136485972,
+    "f0_std": 22.637090522799113
+  },
+  "FastPitch_HifiGAN_Excited_spk5_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/FastPitch_HifiGAN_Excited_spk5_utt1.wav",
+    "jitter_mean": 0.026167597348370205,
+    "shimmer_mean": 0.11550869124256391,
+    "f0_std": 49.08157915173485
+  },
+  "FastPitch_HifiGAN_Excited_spk5_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/FastPitch_HifiGAN_Excited_spk5_utt2.wav",
+    "jitter_mean": 0.02285524761424529,
+    "shimmer_mean": 0.10462406991626393,
+    "f0_std": 50.881343633904905
+  },
+  "FastPitch_HifiGAN_Excited_spk5_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/FastPitch_HifiGAN_Excited_spk5_utt3.wav",
+    "jitter_mean": 0.021125339519906264,
+    "shimmer_mean": 0.09994268054566835,
+    "f0_std": 57.265303701968776
+  },
+  "FastPitch_HifiGAN_Excited_spk6_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/FastPitch_HifiGAN_Excited_spk6_utt1.wav",
+    "jitter_mean": 0.018365364509490546,
+    "shimmer_mean": 0.10322682273429114,
+    "f0_std": 49.0804009687315
+  },
+  "FastPitch_HifiGAN_Excited_spk6_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/FastPitch_HifiGAN_Excited_spk6_utt2.wav",
+    "jitter_mean": 0.01981429896643998,
+    "shimmer_mean": 0.1187492956557185,
+    "f0_std": 64.37652833390969
+  },
+  "FastPitch_HifiGAN_Excited_spk6_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/FastPitch_HifiGAN_Excited_spk6_utt3.wav",
+    "jitter_mean": 0.018469143230801833,
+    "shimmer_mean": 0.11071438076537363,
+    "f0_std": 63.20826872909705
+  },
+  "FastPitch_UnivNet_Excited_spk5_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/FastPitch_UnivNet_Excited_spk5_utt1.wav",
+    "jitter_mean": 0.025532738287039437,
+    "shimmer_mean": 0.1234315791515124,
+    "f0_std": 45.9789894160613
+  },
+  "FastPitch_UnivNet_Excited_spk5_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/FastPitch_UnivNet_Excited_spk5_utt2.wav",
+    "jitter_mean": 0.024065915366094263,
+    "shimmer_mean": 0.11097781893710264,
+    "f0_std": 45.97595623168581
+  },
+  "FastPitch_UnivNet_Excited_spk5_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/FastPitch_UnivNet_Excited_spk5_utt3.wav",
+    "jitter_mean": 0.022915822087541327,
+    "shimmer_mean": 0.09171578977837064,
+    "f0_std": 49.683000878508764
+  },
+  "FastPitch_UnivNet_Excited_spk6_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/FastPitch_UnivNet_Excited_spk6_utt1.wav",
+    "jitter_mean": 0.017955148216215088,
+    "shimmer_mean": 0.10697266732136852,
+    "f0_std": 41.39427546414448
+  },
+  "FastPitch_UnivNet_Excited_spk6_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/FastPitch_UnivNet_Excited_spk6_utt2.wav",
+    "jitter_mean": 0.021538849858908183,
+    "shimmer_mean": 0.11789030559977708,
+    "f0_std": 55.152077956715
+  },
+  "FastPitch_UnivNet_Excited_spk6_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/FastPitch_UnivNet_Excited_spk6_utt3.wav",
+    "jitter_mean": 0.02245922460023194,
+    "shimmer_mean": 0.11552140529343005,
+    "f0_std": 55.62131823863759
+  },
+  "Tacotron2_HifiGAN_Excited_spk5_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/Tacotron2_HifiGAN_Excited_spk5_utt1.wav",
+    "jitter_mean": 0.022893255493226846,
+    "shimmer_mean": 0.1087715602460406,
+    "f0_std": 25.349047066828753
+  },
+  "Tacotron2_HifiGAN_Excited_spk5_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/Tacotron2_HifiGAN_Excited_spk5_utt2.wav",
+    "jitter_mean": 0.020397437234762936,
+    "shimmer_mean": 0.11464792656597392,
+    "f0_std": 35.154208376648015
+  },
+  "Tacotron2_HifiGAN_Excited_spk5_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/Tacotron2_HifiGAN_Excited_spk5_utt3.wav",
+    "jitter_mean": 0.020266176691590483,
+    "shimmer_mean": 0.09383347157797717,
+    "f0_std": 42.59482505257869
+  },
+  "Tacotron2_HifiGAN_Excited_spk6_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/Tacotron2_HifiGAN_Excited_spk6_utt1.wav",
+    "jitter_mean": 0.01832076033994012,
+    "shimmer_mean": 0.1095903392937273,
+    "f0_std": 39.93723510467198
+  },
+  "Tacotron2_HifiGAN_Excited_spk6_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/Tacotron2_HifiGAN_Excited_spk6_utt2.wav",
+    "jitter_mean": 0.015758723594851753,
+    "shimmer_mean": 0.09079765282830295,
+    "f0_std": 49.5989988761093
+  },
+  "Tacotron2_HifiGAN_Excited_spk6_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/Tacotron2_HifiGAN_Excited_spk6_utt3.wav",
+    "jitter_mean": 0.021307302419069807,
+    "shimmer_mean": 0.10885330361163523,
+    "f0_std": 53.37932997122124
+  },
+  "Tacotron2_UnivNet_Excited_spk5_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/Tacotron2_UnivNet_Excited_spk5_utt1.wav",
+    "jitter_mean": 0.026150771195979815,
+    "shimmer_mean": 0.09421585328279074,
+    "f0_std": 26.852551013910208
+  },
+  "Tacotron2_UnivNet_Excited_spk5_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/Tacotron2_UnivNet_Excited_spk5_utt2.wav",
+    "jitter_mean": 0.022301879382943385,
+    "shimmer_mean": 0.09574380677862299,
+    "f0_std": 33.44389759487253
+  },
+  "Tacotron2_UnivNet_Excited_spk5_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/Tacotron2_UnivNet_Excited_spk5_utt3.wav",
+    "jitter_mean": 0.01955481512632125,
+    "shimmer_mean": 0.08324918849175522,
+    "f0_std": 41.37276874064701
+  },
+  "Tacotron2_UnivNet_Excited_spk6_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/Tacotron2_UnivNet_Excited_spk6_utt1.wav",
+    "jitter_mean": 0.021847074909833064,
+    "shimmer_mean": 0.09834153398575082,
+    "f0_std": 40.209034908161264
+  },
+  "Tacotron2_UnivNet_Excited_spk6_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/Tacotron2_UnivNet_Excited_spk6_utt2.wav",
+    "jitter_mean": 0.017400652216531712,
+    "shimmer_mean": 0.09951359311857337,
+    "f0_std": 51.74062836027453
+  },
+  "Tacotron2_UnivNet_Excited_spk6_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/Tacotron2_UnivNet_Excited_spk6_utt3.wav",
+    "jitter_mean": 0.019772586687980268,
+    "shimmer_mean": 0.10764679193566735,
+    "f0_std": 52.36284886018577
+  },
+  "VITS_Excited_spk5_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/VITS_Excited_spk5_utt1.wav",
+    "jitter_mean": 0.02225869942052351,
+    "shimmer_mean": 0.10312209939430018,
+    "f0_std": 39.795073850450734
+  },
+  "VITS_Excited_spk5_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/VITS_Excited_spk5_utt2.wav",
+    "jitter_mean": 0.02367766559537623,
+    "shimmer_mean": 0.099955384441029,
+    "f0_std": 53.295206759447474
+  },
+  "VITS_Excited_spk5_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/VITS_Excited_spk5_utt3.wav",
+    "jitter_mean": 0.023337656071650472,
+    "shimmer_mean": 0.09397154724575378,
+    "f0_std": 50.82742468797506
+  },
+  "VITS_Excited_spk6_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/VITS_Excited_spk6_utt1.wav",
+    "jitter_mean": 0.017587900505763247,
+    "shimmer_mean": 0.08867570662117744,
+    "f0_std": 39.591895918667554
+  },
+  "VITS_Excited_spk6_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/VITS_Excited_spk6_utt2.wav",
+    "jitter_mean": 0.015468308484396828,
+    "shimmer_mean": 0.09531793772360389,
+    "f0_std": 64.13239549987168
+  },
+  "VITS_Excited_spk6_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Excited/VITS_Excited_spk6_utt3.wav",
+    "jitter_mean": 0.01972658187049829,
+    "shimmer_mean": 0.08927299107759872,
+    "f0_std": 52.90288784350964
+  },
+  "FastPitch_HifiGAN_Formal_spk1_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/FastPitch_HifiGAN_Formal_spk1_utt1.wav",
+    "jitter_mean": 0.027883825640146024,
+    "shimmer_mean": 0.13065527936814192,
+    "f0_std": 24.87348218586676
+  },
+  "FastPitch_HifiGAN_Formal_spk1_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/FastPitch_HifiGAN_Formal_spk1_utt2.wav",
+    "jitter_mean": 0.022952880259410866,
+    "shimmer_mean": 0.08631104959784953,
+    "f0_std": 26.40122533274114
+  },
+  "FastPitch_HifiGAN_Formal_spk1_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/FastPitch_HifiGAN_Formal_spk1_utt3.wav",
+    "jitter_mean": 0.02915606058553142,
+    "shimmer_mean": 0.10081543050473332,
+    "f0_std": 29.21238548069563
+  },
+  "FastPitch_HifiGAN_Formal_spk2_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/FastPitch_HifiGAN_Formal_spk2_utt1.wav",
+    "jitter_mean": 0.01938305756994229,
+    "shimmer_mean": 0.08035438566402146,
+    "f0_std": 25.056389400771188
+  },
+  "FastPitch_HifiGAN_Formal_spk2_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/FastPitch_HifiGAN_Formal_spk2_utt2.wav",
+    "jitter_mean": 0.012525499063764017,
+    "shimmer_mean": 0.06883169221184655,
+    "f0_std": 33.45289070563153
+  },
+  "FastPitch_HifiGAN_Formal_spk2_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/FastPitch_HifiGAN_Formal_spk2_utt3.wav",
+    "jitter_mean": 0.018031966023011575,
+    "shimmer_mean": 0.07401960435052193,
+    "f0_std": 41.15588972867557
+  },
+  "FastPitch_UnivNet_Formal_spk1_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/FastPitch_UnivNet_Formal_spk1_utt1.wav",
+    "jitter_mean": 0.02567849915203384,
+    "shimmer_mean": 0.11740973029845235,
+    "f0_std": 20.204563014798257
+  },
+  "FastPitch_UnivNet_Formal_spk1_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/FastPitch_UnivNet_Formal_spk1_utt2.wav",
+    "jitter_mean": 0.02362684287620519,
+    "shimmer_mean": 0.08741625498538302,
+    "f0_std": 21.183344205682637
+  },
+  "FastPitch_UnivNet_Formal_spk1_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/FastPitch_UnivNet_Formal_spk1_utt3.wav",
+    "jitter_mean": 0.027748848371541988,
+    "shimmer_mean": 0.10323860706598775,
+    "f0_std": 25.484237941105963
+  },
+  "FastPitch_UnivNet_Formal_spk2_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/FastPitch_UnivNet_Formal_spk2_utt1.wav",
+    "jitter_mean": 0.016230764945086983,
+    "shimmer_mean": 0.07887518592293292,
+    "f0_std": 21.04901686899942
+  },
+  "FastPitch_UnivNet_Formal_spk2_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/FastPitch_UnivNet_Formal_spk2_utt2.wav",
+    "jitter_mean": 0.012051143351817506,
+    "shimmer_mean": 0.07593173259989965,
+    "f0_std": 29.02226653922108
+  },
+  "FastPitch_UnivNet_Formal_spk2_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/FastPitch_UnivNet_Formal_spk2_utt3.wav",
+    "jitter_mean": 0.018276729350001984,
+    "shimmer_mean": 0.07669443930374603,
+    "f0_std": 35.01252907459794
+  },
+  "Tacotron2_HifiGAN_Formal_spk1_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/Tacotron2_HifiGAN_Formal_spk1_utt1.wav",
+    "jitter_mean": 0.02707052947684148,
+    "shimmer_mean": 0.101947712671406,
+    "f0_std": 16.86734186995333
+  },
+  "Tacotron2_HifiGAN_Formal_spk1_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/Tacotron2_HifiGAN_Formal_spk1_utt2.wav",
+    "jitter_mean": 0.0221199430347525,
+    "shimmer_mean": 0.08161817967668504,
+    "f0_std": 18.669138470930655
+  },
+  "Tacotron2_HifiGAN_Formal_spk1_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/Tacotron2_HifiGAN_Formal_spk1_utt3.wav",
+    "jitter_mean": 0.023226332518146507,
+    "shimmer_mean": 0.0942074790220406,
+    "f0_std": 22.17963548715723
+  },
+  "Tacotron2_HifiGAN_Formal_spk2_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/Tacotron2_HifiGAN_Formal_spk2_utt1.wav",
+    "jitter_mean": 0.018005096923522788,
+    "shimmer_mean": 0.06266651446940959,
+    "f0_std": 26.11139295338707
+  },
+  "Tacotron2_HifiGAN_Formal_spk2_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/Tacotron2_HifiGAN_Formal_spk2_utt2.wav",
+    "jitter_mean": 0.013663811187264415,
+    "shimmer_mean": 0.05346968347818425,
+    "f0_std": 26.673476529401988
+  },
+  "Tacotron2_HifiGAN_Formal_spk2_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/Tacotron2_HifiGAN_Formal_spk2_utt3.wav",
+    "jitter_mean": 0.018192904904939942,
+    "shimmer_mean": 0.06652165843137038,
+    "f0_std": 34.37724538252008
+  },
+  "Tacotron2_UnivNet_Formal_spk1_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/Tacotron2_UnivNet_Formal_spk1_utt1.wav",
+    "jitter_mean": 0.025090027227299055,
+    "shimmer_mean": 0.09377864137395357,
+    "f0_std": 16.090375240086843
+  },
+  "Tacotron2_UnivNet_Formal_spk1_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/Tacotron2_UnivNet_Formal_spk1_utt2.wav",
+    "jitter_mean": 0.025754777263457266,
+    "shimmer_mean": 0.07461772670573479,
+    "f0_std": 16.777117137897775
+  },
+  "Tacotron2_UnivNet_Formal_spk1_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/Tacotron2_UnivNet_Formal_spk1_utt3.wav",
+    "jitter_mean": 0.023489558136063664,
+    "shimmer_mean": 0.0961979949841494,
+    "f0_std": 21.09467581793032
+  },
+  "Tacotron2_UnivNet_Formal_spk2_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/Tacotron2_UnivNet_Formal_spk2_utt1.wav",
+    "jitter_mean": 0.015696201764784475,
+    "shimmer_mean": 0.0641287765741111,
+    "f0_std": 25.088657996722834
+  },
+  "Tacotron2_UnivNet_Formal_spk2_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/Tacotron2_UnivNet_Formal_spk2_utt2.wav",
+    "jitter_mean": 0.012238054456827257,
+    "shimmer_mean": 0.05306189040660983,
+    "f0_std": 26.56405573806284
+  },
+  "Tacotron2_UnivNet_Formal_spk2_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/Tacotron2_UnivNet_Formal_spk2_utt3.wav",
+    "jitter_mean": 0.014678929677780886,
+    "shimmer_mean": 0.06221404552749243,
+    "f0_std": 34.917386735847884
+  },
+  "VITS_Formal_spk1_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/VITS_Formal_spk1_utt1.wav",
+    "jitter_mean": 0.028699979014844862,
+    "shimmer_mean": 0.1124772705840511,
+    "f0_std": 20.491149969336
+  },
+  "VITS_Formal_spk1_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/VITS_Formal_spk1_utt2.wav",
+    "jitter_mean": 0.03169945533992176,
+    "shimmer_mean": 0.11164549565578721,
+    "f0_std": 29.004009393416915
+  },
+  "VITS_Formal_spk1_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/VITS_Formal_spk1_utt3.wav",
+    "jitter_mean": 0.02874761292705302,
+    "shimmer_mean": 0.10078277377499947,
+    "f0_std": 29.4612848299977
+  },
+  "VITS_Formal_spk2_utt1": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/VITS_Formal_spk2_utt1.wav",
+    "jitter_mean": 0.015089285596211956,
+    "shimmer_mean": 0.08220388686316962,
+    "f0_std": 24.358783094729016
+  },
+  "VITS_Formal_spk2_utt2": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/VITS_Formal_spk2_utt2.wav",
+    "jitter_mean": 0.011915035566716957,
+    "shimmer_mean": 0.06399088343394563,
+    "f0_std": 36.081255604368565
+  },
+  "VITS_Formal_spk2_utt3": {
+    "path": "data/raw/wav/CSS/Spoofed/Formal/VITS_Formal_spk2_utt3.wav",
+    "jitter_mean": 0.014646563475535139,
+    "shimmer_mean": 0.07526681611563954,
+    "f0_std": 35.54030597378871
+  }
+}

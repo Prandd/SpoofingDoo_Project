@@ -63,6 +63,10 @@ data/**
 !data/**/
 !data/**/.gitkeep
 
+# Allow prosody manifest for EDA
+!data/features/
+!data/features/prosody_manifest.json
+
 # Experiment outputs (only `.gitkeep` placeholders are tracked; checkpoints/logs stay local).
 experiment/runs/**
 !experiment/runs/**/
